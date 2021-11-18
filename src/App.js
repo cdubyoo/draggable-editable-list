@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ReactSortable } from "react-sortablejs";
 import styled from "styled-components";
 import "./styles.css";
-import { classes } from './classes.js'
+import { classes, killOrder, sedOrder } from './data.js'
 import { Dropdown } from "./Dropdown";
 
 const StyledBlockWrapper = styled.div`
@@ -250,8 +250,13 @@ export default function App() {
         ))}
       </ReactSortable>
     </div>
+    <div className="info">
+      {sedOrder} <br></br>
+
+      {killOrder}
+    </div>
     <div className="bor">
-      borbor
+        borbor
     </div>
     </>
   );

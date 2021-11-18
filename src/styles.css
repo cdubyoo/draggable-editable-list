@@ -18,6 +18,10 @@
   clear: both;
 }
 
+.info {
+  text-align: left;
+}
+
 .bor {
   text-align: center;
   font-size: small;
