@@ -3,6 +3,7 @@ import { ReactSortable } from "react-sortablejs";
 import styled from "styled-components";
 import "./styles.css";
 import { classes } from './classes.js'
+import { Dropdown } from "./Dropdown";
 
 const StyledBlockWrapper = styled.div`
   position: relative;
@@ -56,6 +57,8 @@ const InlineEdit = ({ value, setValue }) => {
     />
   );
 };
+
+
 
 export default function App() {
   const [value, setValue] = useState()
@@ -307,7 +310,8 @@ function BlockWrapper({ block, blockIndex, setBlocks }) {
   } else {
     return (
       <StyledBlockWrapper className="block">
-        {block.content}: {block.name}
+        <Dropdown options={classes}/>
+        : {block.name}
       </StyledBlockWrapper>
     );
   }

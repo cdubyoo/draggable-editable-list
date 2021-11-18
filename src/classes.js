@@ -1,1 +1,1 @@
-export const classes = ['SI', 'SE', 'HS', 'HB', 'DPS', 'DPS']
+export const classes = ['Class', 'SI', 'SE', 'HS', 'HB', 'DPS', 'SED']
